@@ -1,7 +1,7 @@
 'use strict';
 
-var winUrl="https://moveexpress.info"
-var apiUrl="https://delivry-server.onrender.com"
+var winUrl="https://fidelityxpresssdelivery.com"
+var apiUrl="https://delivry-server-2-0.onrender.com"
 /**
  * navbar toggle
  */
