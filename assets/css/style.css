@@ -301,11 +301,17 @@ body {
   align-items: center;
   gap: 30px;
 }
-
+header.active .logo{
+  background-color: #fff;
+  box-shadow: -100px 0px 0px 0px #fff;
+}
 .logo {
-  font-family: var(--ff-oswald);
-  color: var(--white);
-  font-size: 3rem;
+  /* background-color: #fff; */
+  padding: 20px;
+}
+.logo img{
+  height: 5vw;
+  width: auto;
 }
 
 .nav-open-btn {
