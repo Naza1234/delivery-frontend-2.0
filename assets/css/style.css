@@ -307,7 +307,7 @@ header.active .logo{
 }
 .logo {
   /* background-color: #fff; */
-  padding: 20px;
+  padding: 0px;
 }
 .logo img{
   height: 5vw;
