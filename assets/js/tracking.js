@@ -3,7 +3,7 @@
 var button=document.querySelector(".track .btn-outline")
 
 button.addEventListener("click",()=>{
-    var input=document.querySelector(".track input").value.toLowerCase();     
+    var input=document.querySelector(".track input").value;     
     if (input && input.length === 10) {
       button.classList.add("active_parent_to_button")
         fetch(`${apiUrl}/shipment/shipments/trackingId/${input}`)
