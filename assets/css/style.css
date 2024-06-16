@@ -2005,7 +2005,63 @@ iframe{
   height: auto;
 }
 
+.heading_dash {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: calc(50px + 5vw);
+  /* margin-bottom: 5vw; */
+  padding: 10px;
+  /* background-color: #000;
+   */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-self: center;
+}
 
+.heading_dash div{
+  width: calc(50% - 10px);
+  /* background-color: #1026e8; */
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: right;
+  position: relative;
+  height: 120px;
+}
+.heading_dash div:first-child{
+  background-color:hsl(202, 75%, 47%) ;
+}
+.heading_dash div:last-child{
+  background-color:var(--prussian-blue);
+}
+.heading_dash div a{
+  background-color: #fff;
+  color: #323C53;
+  position: absolute;
+  width: calc(100% - 5px);
+  right: 2.5px;
+  height: 40px;
+  padding: 10px;
+  bottom: 2.5px;
+  border-radius: 3px;
+}
+.admine_list li p {
+ display: flex;
+ align-items: flex-end;
+}
+.admine_list li p.hid {
+  display: none;
+  align-items: center;
+ }
+.admine_list li p img{
+ width: auto;
+ margin-left: 5px;
+ cursor: pointer;
+ height: 25px;
+ pointer-events: visible;
+}
 @media screen and (max-width : 800px) {
   
 .hero.about_page{
