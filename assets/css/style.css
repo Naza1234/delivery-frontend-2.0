@@ -1423,6 +1423,7 @@ h1.active{
   align-items: center;
 }
 h3,
+.add_form form label select,
 .add_form form label input{
   width: 200px;
   border-radius: 5px;
@@ -2217,9 +2218,20 @@ iframe{
   color: #242831;
 }
 
+.tract_input{
+  color: #fff;
+}
 
-
-
+.tract_input.active{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 45%;
+  margin-left: 10px;
+  color: #000; 
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
 
 
 

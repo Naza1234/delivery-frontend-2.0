@@ -82,6 +82,7 @@ forms[1].addEventListener("submit",(e)=>{
     e.preventDefault()
     forms[1].classList.add("active_parent_to_button")
     var inputs=forms[1].getElementsByTagName("input")
+    var Selects=forms[1].getElementsByTagName("select")
      
 
     const params={
@@ -89,7 +90,10 @@ forms[1].addEventListener("submit",(e)=>{
         productName: inputs[0].value,
         productWeight:inputs[1].value,
         productSize:inputs[2].value,
-        productDescription:inputs[3].value
+        productDescription:inputs[3].value,
+        BookingMode:Selects[0].value,
+        PostingDate:inputs[4].value,
+        ConsignmentNo:inputs[5].value,
     }
 
 
@@ -152,3 +156,20 @@ function popup(){
     document.getElementsByClassName("conecting")[0].classList.remove("hid")
     
     }
+
+
+
+    function generateRandomString(length) {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+          result += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      return result;
+  }
+
+  document.getElementById('generateButton').addEventListener('click', () => {
+      const randomString = generateRandomString(10);
+      // console.log(randomString);
+      document.getElementsByClassName("gen_input")[0].value=randomString
+  });

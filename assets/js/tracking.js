@@ -265,12 +265,37 @@ function populate(shipmentData,packageData) {
 
 
 
-        <label for="product description">
-          product description
+     
+
+        
+        <label for="product size">
+        Booking Mode
           <h3>
-          ${packageData.productDescription}
+          ${packageData.BookingMode}
           </h3>
         </label>
+
+        <label for="product size">
+        Posting Date
+          <h3>
+          ${packageData.PostingDate}
+          </h3>
+        </label>
+
+        <label for="product size">
+        Consignment No
+          <h3>
+          ${packageData.ConsignmentNo}
+          </h3>
+        </label>
+
+
+        <label for="product description">
+        product description
+        <h3>
+        ${packageData.productDescription}
+        </h3>
+      </label>
 
 
 
