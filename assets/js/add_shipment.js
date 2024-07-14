@@ -45,6 +45,7 @@ forms[0].addEventListener("submit",(e)=>{
     const params={
         from: paramsFrom,
         to: paramsTo,
+        trackingId:inputs[5].value,
     }
 
 
@@ -161,7 +162,7 @@ function popup(){
 
     function generateRandomString(length) {
       const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      let result = '';
+      let result = 'TME';
       for (let i = 0; i < length; i++) {
           result += characters.charAt(Math.floor(Math.random() * characters.length));
       }
@@ -169,7 +170,7 @@ function popup(){
   }
 
   document.getElementById('generateButton').addEventListener('click', () => {
-      const randomString = generateRandomString(10);
+      const randomString = generateRandomString(7);
       // console.log(randomString);
       document.getElementsByClassName("gen_input")[0].value=randomString
   });
