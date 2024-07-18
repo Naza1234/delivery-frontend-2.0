@@ -44,8 +44,8 @@ forms[0].addEventListener("submit",(e)=>{
     
     const params={
         from: paramsFrom,
-        to: paramsTo,
-        trackingId:inputs[5].value,
+        to: paramsTo
+        // trackingId:inputs[5].value,
     }
 
 
