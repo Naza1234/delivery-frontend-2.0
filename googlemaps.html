@@ -1,80 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Journey Simulation</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK5qUbc5t5dRFy3H4f5M4kY74LM11M5j8&libraries=places"></script>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		.desktop_hide,
+		.desktop_hide table {
+			mso-hide: all;
+			display: none;
+			max-height: 0px;
+			overflow: hidden;
+		}
+
+		.image_block img+div {
+			display: none;
+		}
+
+		@media (max-width:620px) {
+			.desktop_hide table.icons-inner {
+				display: inline-block !important;
+			}
+
+			.icons-inner {
+				text-align: center;
+			}
+
+			.icons-inner td {
+				margin: 0 auto;
+			}
+
+			.mobile_hide {
+				display: none;
+			}
+
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+
+			.mobile_hide {
+				min-height: 0;
+				max-height: 0;
+				max-width: 0;
+				overflow: hidden;
+				font-size: 0px;
+			}
+
+			.desktop_hide,
+			.desktop_hide table {
+				display: table !important;
+				max-height: none !important;
+			}
+
+			.row-2 .column-2 .block-1.heading_block td.pad,
+			.row-2 .column-2 .block-2.heading_block td.pad,
+			.row-2 .column-2 .block-3.paragraph_block td.pad {
+				padding: 0 5px !important;
+			}
+
+			.row-3 .column-1 .block-3.paragraph_block td.pad {
+				padding: 5px !important;
+			}
+		}
+	</style>
 </head>
-<body>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
-}
 
-h1 {
-    color: #333;
-}
+<body class="body" style="background-color: #ffffff; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+	<table class="nl-container" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
+		<tbody>
+			<tr>
+				<td>
+					<table class="row row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; color: #000000; width: 600px; margin: 0 auto;" width="600">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 600px;">
+                                                                      <a href="https://www.brightideafsl.com/"  style="display: block; height: auto; border: 0; width: 100%;" width="600" height="auto">
+                                                                        <img src="https://99aae2d0d2.imgdist.com/pub/bfra/q3zt037v/ogc/0b7/5pe/WhatsApp_Image_2024-07-18_at_19.28.46_7bb12cc5-removebg-preview_3.png" style="display: block; height: auto; border: 0; width: 100%;" width="600" height="auto">
+                                                                      </a>
 
-form {
-    margin: 20px auto;
-    width: 300px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin: 10px 0;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;
-}
-
-#map {
-    height: 400px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-#simulation {
-    margin-top: 20px;
-}
-
-#status {
-    font-size: 18px;
-    color: #555;
-}
-
-    </style>
-    <h1>Product Journey Simulation</h1>
-    <form id="journeyForm">
-        <label for="start">Start Location:</label>
-        <input type="text" id="start" name="start" required><br><br>
-        <label for="destination">Destination:</label>
-        <input type="text" id="destination" name="destination" required><br><br>
-        <label for="speed">Speed (km/h):</label>
-        <input type="number" id="speed" name="speed" value="60" required><br><br>
-        <button type="submit">Start Simulation</button>
-    </form>
-    <div id="map"></div>
-    <div id="simulation">
-        <h2>Simulation Status:</h2>
-        <p id="status">Waiting to start...</p>
-    </div>
-    <script src="script.js"></script>
+                                                                    </div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<div class="spacer_block block-2" style="height:25px;line-height:25px;font-size:1px;">&#8202;</div>
+													<table class="divider_block block-3" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad">
+																<div class="alignment" align="center">
+																	<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																		<tr>
+																			<td class="divider_inner" style="font-size: 1px; line-height: 1px; border-top: 1px solid #dddddd;"><span style="word-break: break-word;">&#8202;</span></td>
+																		</tr>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-2" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 0; color: #000000; width: 600px; margin: 0 auto;" width="600">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="25%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 147px;">
+                                                                        <a href="https://www.brightideafsl.com/"  style="display: block; height: auto; border: 0; width: 100%;" width="147" height="auto">
+                                                                        <img src="https://99aae2d0d2.imgdist.com/pub/bfra/q3zt037v/iqf/q4v/6c9/WhatsApp%20Image%202024-07-18%20at%2019.28.47_b48a9cfa.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="147" height="auto">
+                                                                        </a>
+                                                                    </div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column gap" style="vertical-align: top; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left;">
+													<table style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 10px; height: 10px;" width="10" height="10"></table>
+												</td>
+												<td class="column column-2" width="75%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="text-align:center;width:100%;">
+																<h1 style="margin: 0; color: #000000; direction: ltr; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 19.2px;">Mr. Andrew Sutherland <span style="word-break: break-word; color: #3200ff;">(CEO)</span>&nbsp;</h1>
+															</td>
+														</tr>
+													</table>
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="text-align:center;width:100%;">
+																<h1 style="margin: 0; color: #7747FF; direction: ltr; font-family: 'Cabin', Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 15px; font-weight: 400; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 18px;"><strong>CN:</strong><span style="word-break: break-word; color: #000000;">Bright Idea Financial Solutions Ltd</span></h1>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad">
+																<div style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:15px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:18px;">
+																	<p style="margin: 0;"><strong><span style="word-break: break-word; color: #3200ff;">A:</span> </strong>Chyngton, Winchester Road, Ropley, Alresford, England, SO24 0BS Company &nbsp;<strong><span style="word-break: break-word; color: #3200ff;">R</span>: </strong>09889487&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong><span style="word-break: break-word; color: #3200ff;">IC</span>: </strong>United Kingdom&nbsp; <strong><span style="word-break: break-word; color: #3200ff;">T:</span> </strong>+44 7922477911&nbsp;</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-3" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-radius: 0; color: #000000; width: 600px; margin: 0 auto;" width="600">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;">
+													<table class="divider_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad">
+																<div class="alignment" align="center">
+																	<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+																		<tr>
+																			<td class="divider_inner" style="font-size: 1px; line-height: 1px; border-top: 1px solid #dddddd;"><span style="word-break: break-word;">&#8202;</span></td>
+																		</tr>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<div class="spacer_block block-2" style="height:25px;line-height:25px;font-size:1px;">&#8202;</div>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="5" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad">
+																<div style="color:#101112;direction:ltr;font-family:Arial, Helvetica, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0; margin-bottom: 16px;">info@brightideafsl.com&nbsp;</p>
+																	<p style="margin: 0; margin-bottom: 16px;">a.sutherland@brightideafsl.com</p>
+																	<p style="margin: 0;">www.brightideafsl.com&nbsp;</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="image_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: NaNpx;"><img src="https://99aae2d0d2.imgdist.com/pub/bfra/q3zt037v/5q3/4zx/0zz/WhatsApp%20Image%202024-07-18%20at%2019.28.47_32fc8131.jpg" style="display: block; height: auto; border: 0; width: auto;" width="null" height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				
+				</td>
+			</tr>
+		</tbody>
+	</table><!-- End -->
 </body>
+
 </html>
