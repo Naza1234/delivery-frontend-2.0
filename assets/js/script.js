@@ -1,7 +1,8 @@
 'use strict';
 
 var winUrl="https://fidelityxpresssdelivery.com"
-var apiUrl="https://delivry-server-2-0.onrender.com"
+// var apiUrl="https://delivry-server-2-0.onrender.com"
+var apiUrl="https://delivry-server-2-0-0ui1.onrender.com"
 /**
  * navbar toggle
  */
